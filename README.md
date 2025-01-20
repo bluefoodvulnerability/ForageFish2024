@@ -18,4 +18,15 @@ This is the official repository for paper "Unstable Supply and Future Shortages 
 
 * all input data is in input.zip file
 * please unarchive input.zip and rename the folder into data
-* then run all script in 01-Modelling and 02-Plotting one by one in order
+* then run all script in 01-Modelling and 02-Plotting one by one in order follow how to use:
+
+## How to use
+
+1. 01_forageFishDemand.R - sumulates the forage fish demand historically;
+2. 02_ffdrEstimation.R - calculate the Forage Fish Dependency Ratio for each species;
+3. 03_exploitMap_cMSY.R - using CMSY method to explore the status of forage fish stocks;
+4. 04_scenarioModelInput.R & 05_scenarioModeling_simu.R - generates the nessessary input for scenario model and run simulation;
+5. 06_ffReplacement.R - calculated the forage fish amount should have been replaced under each scenario;
+6. 07_country_taxa_weight.R & 10_modeloutput.R - function for calculating weight for allocate forage fish loss and output all results to a table after running.
+7. Folder **02-Plotting** contains scripts that would generate all figures shown in paper.
+8. No need to modify scipts in **00-Support Functions**.
