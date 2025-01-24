@@ -22,11 +22,11 @@ This is the official repository for paper "Unstable Supply and Future Shortages 
 
 ## How to use
 
-1. 01_forageFishDemand.R - sumulates the forage fish demand historically;
-2. 02_ffdrEstimation.R - calculate the Forage Fish Dependency Ratio for each species;
-3. 03_exploitMap_cMSY.R - using CMSY method to explore the status of forage fish stocks;
-4. 04_scenarioModelInput.R & 05_scenarioModeling_simu.R - generates the nessessary input for scenario model and run simulation;
-5. 06_ffReplacement.R - calculated the forage fish amount should have been replaced under each scenario;
-6. 07_country_taxa_weight.R & 10_modeloutput.R - function for calculating weight for allocate forage fish loss and output all results to a table after running.
-7. Folder **02-Plotting** contains scripts that would generate all figures shown in paper.
-8. No need to modify scipts in **00-Support Functions**.
+1. *01_forageFishDemand.R* - Simulates the historical demand for forage fish demand.
+2. *02_ffdrEstimation.R* - Calculates the Forage Fish Dependency Ratio (FFDR) for each species.
+3. *03_exploitMap_cMSY.R* – Uses the CMSY method to explore the likely status of forage fish stocks.
+4. *04_scenarioModelInput.R* & 05_scenarioModeling_simu.R - Generate the necessary input for the scenario model and run the simulation.
+5. *06_ffReplacement.R* - Calculates how much forage fish would need to be replaced under each scenario.
+6. *07_country_taxa_weight.R* & 10_modeloutput.R – Provide functions for calculating weights to allocate forage fish losses and output all results to a table once the simulations are complete.
+7. The *02-Plotting* folder contains the scripts for generating all figures in the manuscript.
+8. The *00-Support Functions* folder contains backend functions that do not require modification or execution; they are provided solely as supporting resources.
