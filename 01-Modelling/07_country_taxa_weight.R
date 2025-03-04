@@ -2,13 +2,13 @@ library(pacman)
 p_load(tidyverse)
 # 01 Define raw data path 
 # Aquaculture production by quantity
-aquaProd_file <- './Data/AquacultureProductionClean.csv'
+aquaProd_file <- './03-Input/aquaculture.production.csv'
 
 # define range 
-AquaRef <- './Data/Aquaculture.species.list'
+AquaRef <- './03-Input/aquaculture.species.list'
 
 # taxa info
-taxaList_path <- './Data/AquacultureTaxa.list.csv'
+taxaList_path <- './03-Input/aquaculture.taxa.csv'
 
 # 02 define research range 
 # filter taxa of farming by Hadley（2018）

@@ -1,6 +1,6 @@
 # load functions
 
-source('./Scripts/00-Support Functions/02_modelSupport.R')
+source('./00-Support Functions/02_modelSupport.R')
 
 # define path
 modelInput_path <- './Results/Senario.model.input.rds'

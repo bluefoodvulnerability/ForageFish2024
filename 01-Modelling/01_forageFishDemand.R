@@ -2,11 +2,11 @@
 library(pacman)
 p_load(vroom, multidplyr, tidyverse)
 
-source('./Scripts/00-Support Functions/02_modelSupport.R')
+source('./00-Support Functions/02_modelSupport.R')
 
 # 01.Required File Readin & Preprocess-------------------------------------
-taxaList_path <- './Data/FarmSpeciesList.csv'
-FAO_aqua_path <- './Data/AquacultureProductionClean.csv'
+taxaList_path <- './03-Input/aquaculture.taxa.csv'
+FAO_aqua_path <- './03-Input/aquaculture.production.csv'
 
 taxaList <- read_csv(taxaList_path)
 aquaProdduction_fao <- read_csv(FAO_aqua_path)

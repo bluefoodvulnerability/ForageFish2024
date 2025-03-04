@@ -5,11 +5,12 @@ p_load(multidplyr, stringr)
 cmsyResults_file <- './Results/FF.cmsy.stock.status.rds' # catch msy model data path
 aquaModel_file <- './Results/FishmealUsage.rds' # FF demand data path
 ffdr_file <- './Results/FFDRs.rds'
-aquaProd_file <- './Data/AquacultureProductionClean.csv'
-aquaValue_file <- './Data/AquacultureValueClean.csv'
-taxaInfo_file <- './Data/AquacultureTaxa.list.csv'
 forageFishDemand_file <- './Results/FishmealUsage.rds'
-forageFishCatch_path <- './Data/ForageFishLandingClean.csv'
+
+aquaProd_file <- './03-Input/aquaculture.production.csv'
+aquaValue_file <- './03-Input/aquaculture.value.csv'
+taxaInfo_file <- './03-Input/aquaculture.taxa.csv'
+forageFishCatch_path <- './03-Input/ff.landing.csv'
 
 forageFishCatch <- read_csv(forageFishCatch_path)
 taxaInfo <- read_csv(taxaInfo_file)
@@ -19,9 +20,6 @@ ffdr <- read_rds(ffdr_file)
 ffDemand <- read_csv(forageFishDemand_file)
 
 # 01.  Taxa weights -------------------------------------------------------
-
-AquaUnitPrice <- vroom('./Results/00_Semi-finished/02_scenarioModel/00_AquaUnitPrice.csv')
-
 # production data wide to long
 Aquaculture_prod <- Aquaculture_prod  %>% 
     pivot_longer(-c(Country, Name_en, 

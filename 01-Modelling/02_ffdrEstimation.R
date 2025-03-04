@@ -1,10 +1,10 @@
 # 00.Package Import -------------------------------------------------------
 library(pacman)
-source('./Scripts/00-Support Functions/02_modelSupport.R')
+source('./00-Support Functions/02_modelSupport.R')
 p_load(tidyverse, multidplyr)
 
 # 01.Required File Readin & Preprocess-------------------------------------
-taxaList_path <- './Data/FarmSpeciesList.csv'
+taxaList_path <- './03-Input/aquaculture.taxa.csv'
 
 taxaList <- read_csv(taxaList_path)
 
