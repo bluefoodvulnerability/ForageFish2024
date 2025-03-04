@@ -17,7 +17,7 @@ This is the official repository for paper "Unstable Supply and Future Shortages 
 ## Usage
 
 * all input data is in input.zip file
-* please unarchive input.zip and rename the folder into data
+* please unarchive input.zip
 * then run all script in 01-Modelling and 02-Plotting one by one in order follow how to use:
 
 ## How to use
